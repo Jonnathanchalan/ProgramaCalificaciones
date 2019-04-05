@@ -13,6 +13,14 @@ import ec.edu.ups.clases.Grupo;
  */
 public class Materia {
 
+    public Materia(int codigo, String nombre, String direccion, int numeroCreditos, int nivel) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.numeroCreditos = numeroCreditos;
+        this.nivel = nivel;
+    }
+
     @Override
     public String toString() {
         return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", direccion=" + direccion + ", numeroCreditos=" + numeroCreditos + ", nivel=" + nivel + '}';
