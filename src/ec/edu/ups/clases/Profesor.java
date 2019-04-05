@@ -5,7 +5,6 @@
  */
 package ec.edu.ups.clases;
 
-import java.util.List;
 
 /**
  *
@@ -13,9 +12,10 @@ import java.util.List;
  */
 public class Profesor {
     protected int codigo;
-    private String nombre;
-    private String direccion;
-    private List<Carrera> carreras ;
+    private String titulo;
+    private double salario;
+    private String cargo;
+    
 
     
 }
