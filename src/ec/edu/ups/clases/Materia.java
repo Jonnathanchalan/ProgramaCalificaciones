@@ -5,17 +5,64 @@
  */
 package ec.edu.ups.clases;
 
-import java.util.List;
+import ec.edu.ups.clases.Grupo;
 
 /**
  *
  * @author jonnathan
  */
 public class Materia {
+
+    @Override
+    public String toString() {
+        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", direccion=" + direccion + ", numeroCreditos=" + numeroCreditos + ", nivel=" + nivel + '}';
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public int getNumeroCreditos() {
+        return numeroCreditos;
+    }
+
+    public void setNumeroCreditos(int numeroCreditos) {
+        this.numeroCreditos = numeroCreditos;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
     protected int codigo;
     private String nombre;
     private String direccion;
-    private List<Carrera> carreras ;
+    private int numeroCreditos;
+    private int nivel;
+   
 
     
 }

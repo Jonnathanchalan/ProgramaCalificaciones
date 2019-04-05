@@ -5,17 +5,46 @@
  */
 package ec.edu.ups.clases;
 
-import java.util.List;
+
 
 /**
  *
  * @author jonnathan
  */
 public class Grupo {
+
+    @Override
+    public String toString() {
+        return "Grupo{" + "codigo=" + codigo + ", nombre=" + nombre + ", cupo=" + cupo + '}';
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getCupo() {
+        return cupo;
+    }
+
+    public void setCupo(int cupo) {
+        this.cupo = cupo;
+    }
     protected int codigo;
     private String nombre;
-    private String direccion;
-    private List<Carrera> carreras ;
+    private int  cupo;
+    
 
     
 }
