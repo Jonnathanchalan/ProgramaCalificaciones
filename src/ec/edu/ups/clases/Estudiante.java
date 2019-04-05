@@ -11,30 +11,18 @@ import java.util.List;
  *
  * @author jonnathan
  */
-public class Estudiante {
+public class Estudiante extends Persona {
+    private Carrera carrera;
 
     @Override
     public String toString() {
-        return "Estudiante{" + "codigo=" + codigo + ", carreras=" + carreras + '}';
+        return "Estudiante{" + "codigo=" + codigo + ", carreras=" + carrera + '}';
     }
 
-    public int getCodigo() {
-        return codigo;
-    }
+    
 
-    public void setCodigo(int codigo) {
+    public void setCarrera(Carrera carrera) {
         this.codigo = codigo;
     }
 
-    public List<Carrera> getCarreras() {
-        return carreras;
-    }
-
-    public void setCarreras(List<Carrera> carreras) {
-        this.carreras = carreras;
-    }
-    protected int codigo;
-    private List<Carrera> carreras ;
-
-    
 }
