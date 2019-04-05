@@ -51,13 +51,7 @@ public class Sede {
         this.direccion = direccion;
     }
 
-    public String getCarreras() {
-        return carreras;
-    }
-
-    public void setCarreras(String carreras) {
-        this.carreras = carreras;
-    }
+   
    
     
     
