@@ -5,7 +5,9 @@
  */
 package ec.edu.ups.clasesPrueba;
 
-import java.util.ArrayList;
+import ec.edu.ups.clases.Estudiante;
+
+
 
 /**
  *
@@ -14,18 +16,11 @@ import java.util.ArrayList;
 public class Prueba {
     public static void main(String[]arg){
         
+        Estudiante estudiante=new Estudiante();
+        
         
          
-         ArrayList<String>Carrera;
-      Carrera=new ArrayList<String>();
-      
-      Carrera.add("2019");
-      Carrera.add("Computacion");
-      Carrera.add("Sistemas");
-      
-      for(int i=0;i<Carrera.size();i++){
-          System.out.println("-->"+Carrera.get(i)); 
-      }
+       
         
     }
     
