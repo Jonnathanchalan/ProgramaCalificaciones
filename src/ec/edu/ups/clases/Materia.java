@@ -12,6 +12,11 @@ import ec.edu.ups.clases.Grupo;
  * @author jonnathan
  */
 public class Materia {
+    protected int codigo;
+    private String nombre;
+    private String direccion;
+    private int numeroCreditos;
+    private int nivel;
 
     public Materia(int codigo, String nombre, String direccion, int numeroCreditos, int nivel) {
         this.codigo = codigo;
@@ -21,11 +26,7 @@ public class Materia {
         this.nivel = nivel;
     }
 
-    @Override
-    public String toString() {
-        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", direccion=" + direccion + ", numeroCreditos=" + numeroCreditos + ", nivel=" + nivel + '}';
-    }
-
+    
     public int getCodigo() {
         return codigo;
     }
@@ -65,12 +66,12 @@ public class Materia {
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-    protected int codigo;
-    private String nombre;
-    private String direccion;
-    private int numeroCreditos;
-    private int nivel;
+  
    
+@Override
+    public String toString() {
+        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", direccion=" + direccion + ", numeroCreditos=" + numeroCreditos + ", nivel=" + nivel + '}';
+    }
 
     
 }
