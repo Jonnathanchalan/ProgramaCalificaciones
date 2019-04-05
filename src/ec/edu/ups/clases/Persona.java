@@ -12,6 +12,11 @@ import java.util.List;
  * @author jonnathan
  */
 public class Persona {
+
+    @Override
+    public String toString() {
+        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", direccion=" + direccion + ", correo=" + correo + ", sedes=" + sedes + '}';
+    }
      protected int codigo;
     private String nombre;
     private String cedula;
