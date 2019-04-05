@@ -33,8 +33,8 @@ public class Profesor {
         this.titulo = titulo;
     }
 
-    public double getSalario() {
-        return salario;
+    public double getSalario(int horasTrabajadas,double valorPorHora) {
+        return salario+(horasTrabajadas*valorPorHora);
     }
 
     public void setSalario(double salario) {

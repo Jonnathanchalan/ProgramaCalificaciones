@@ -13,10 +13,29 @@ import java.util.List;
  */
 public class Carrera {
 
-    @Override
-    public String toString() {
-        return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre + ", materias=" + materias + ", numeroSemestres=" + numeroSemestres + ", numeroEstudiantes=" + numeroEstudiantes + ", titulo=" + titulo + ", materia=" + materia + '}';
+    public Carrera() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+   
+     protected int codigo;
+    private String nombre;
+    private String materias;
+    private int numeroSemestres;
+    private int numeroEstudiantes;
+    private String titulo;
+    private List<Materia> materia ;
+
+    public Carrera(int codigo, String nombre, String materias, int numeroSemestres, int numeroEstudiantes, String titulo) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.materias = materias;
+        this.numeroSemestres = numeroSemestres;
+        this.numeroEstudiantes = numeroEstudiantes;
+        this.titulo = titulo;
+    }
+
+   
 
     public int getCodigo() {
         return codigo;
@@ -73,13 +92,10 @@ public class Carrera {
     public void setMateria(List<Materia> materia) {
         this.materia = materia;
     }
-    protected int codigo;
-    private String nombre;
-    private String materias;
-    private int numeroSemestres;
-    private int numeroEstudiantes;
-    private String titulo;
-    private List<Materia> materia ;
-
+     @Override
+    public String toString() {
+        return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre + ", materias=" + materias + ", numeroSemestres=" + numeroSemestres + ", numeroEstudiantes=" + numeroEstudiantes + ", titulo=" + titulo + ", materia=" + materia + '}';
+    }
+    
     
 }

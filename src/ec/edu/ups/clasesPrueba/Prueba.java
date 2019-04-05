@@ -5,7 +5,9 @@
  */
 package ec.edu.ups.clasesPrueba;
 
+import ec.edu.ups.clases.Carrera;
 import ec.edu.ups.clases.Estudiante;
+import ec.edu.ups.clases.Sede;
 
 
 
@@ -16,12 +18,16 @@ import ec.edu.ups.clases.Estudiante;
 public class Prueba {
     public static void main(String[]arg){
         
-        Estudiante estudiante=new Estudiante();
+        Sede sedecuenca=new Sede();
+        Carrera carrera=new Carrera(); 
+            
         
         
-         
+       
+        
+ 
        
         
     }
-    
+
 }

@@ -12,17 +12,16 @@ import java.util.List;
  * @author jonnathan
  */
 public class Estudiante extends Persona {
+
+    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula) {
+        super(codigo, nombre, cedula);
+        this.carrera = carrera;
+    }
     private Carrera carrera;
-
-    @Override
-    public String toString() {
-        return "Estudiante{" + "codigo=" + codigo + ", carreras=" + carrera + '}';
+        
+        
+        
     }
+   
 
-    
 
-    public void setCarrera(Carrera carrera) {
-        this.codigo = codigo;
-    }
-
-}
